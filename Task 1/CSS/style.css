@@ -1,0 +1,62 @@
+.form{
+    margin: 50px 0;
+}
+
+body{
+    background-color: cadetblue;
+}
+
+.form form{
+    background-color: #373A40;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.form form textarea{
+    overflow-y: scroll;
+}
+
+.form form .form_btn{
+    text-align: center;
+}
+
+/* Done php page */
+
+.output{
+    margin: 50px 0;
+}
+
+.output .info{
+    background-color: #373A40;
+    color: white;
+    padding: 10px 20px; 
+    border-radius: 10px;
+}
+
+.output .info h2{
+    text-align: center;
+    font-size: 35px;
+    padding: 20px 0;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+
+.output .info .info_text{
+    padding: 10px 0;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(255, 4, 4);
+    font-weight: 600;
+}
+
+.output .info p{
+    padding: 5px 0;
+    font-size: 22px;
+}
+
+.output .info p b{
+    color: rgb(138, 214, 6);
+}
+
