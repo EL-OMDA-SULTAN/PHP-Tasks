@@ -9,7 +9,6 @@
     <body>
         <h1>Play with Array</h1>
         <hr class="hr">
-
         <?php 
             echo "<h3>Looping Array range ( 2 - 10 ) with step 2</h3>";
             $arr=range(2,10,2);
@@ -75,7 +74,6 @@
             foreach ($filtered as $value) {
                 echo "<span>$value</span>";
             }
-
 
         ?>
     </body>
