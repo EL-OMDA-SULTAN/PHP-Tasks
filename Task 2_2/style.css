@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(71, 104, 105) !important;
+    text-align: center;
+    color: white;
+    /* text-shadow: 0 0 10px black; */
+}
+
+h1{
+    font-size: 50px;
+    color: brown;
+    text-shadow: 0 0 3px white;
+}
+
+h3{
+    font-size: 25px;
+    color: #0aed6d;
+    /* text-shadow: 0 0 3px white; */
+}
+
+hr{
+    border: 1px solid black;
+}
+
+span {
+    display: inline-block;
+    padding: 10px  20px;
+    background-color: yellow;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    border-left: 2px solid brown;
+    margin-bottom: 50px;
+}
