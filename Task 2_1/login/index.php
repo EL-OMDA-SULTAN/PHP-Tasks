@@ -25,7 +25,12 @@
                                 <input type="password" class="form-control" id="password" name="password" required>
                             </div>
                         </div>
-                        <input type="submit" name="submit" id="submit" value="LogIn" class="btn" >
+                        <input type="submit" name="submit" id="submit" value="LogIn" class="btn mb-4" >
+                        <div class="row mb-2 justify-content-center sin_link">
+                            <div class="col-3 text-center"> 
+                                <a href="../register/register.php" class=" text-light fs-5" >Sin Up</a>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>

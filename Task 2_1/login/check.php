@@ -12,12 +12,12 @@
         if($username == $user_name && $password == $user_password){
             global $x;
             $x=1;
-            header('Location: ../home.php');
+            header('Location: ../main.php');
             break;
         }
     }
     if($x==0){
-        header('Location: login.php');
+        header('Location: index.php');
     }
     fclose ($file);
 ?> 
