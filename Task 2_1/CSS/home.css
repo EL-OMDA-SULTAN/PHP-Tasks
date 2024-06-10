@@ -1,0 +1,76 @@
+body{
+    background-color: #538392 !important;
+}
+
+.student_info{
+    height: 80vh;
+}
+
+.student_info h1{
+    text-align: center;
+    color: white;
+    margin: 50px 0;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px black;
+}
+
+.student_info .st_btn .btn{
+    padding: 10px 30px;
+    border: 3px solid #26355D;
+    border-radius: 10px;
+    color: #26355D;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 10px;
+    box-shadow: 0 0 5px black;
+}
+
+.student_info .st_btn .btn1:hover{
+    background-color: #12d17b;
+    color: white;
+}
+
+.student_info .st_btn .btn2:hover{
+    background-color: #26355D;
+    color: white;
+}
+
+.student_info .st_degree table{
+    background-color: #04174ab3 !important;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 0 0 10px black;
+    margin-top: 40px;
+    width: 100%; 
+    text-align: center; 
+    height:300px;
+    padding: 10px;
+}
+
+.student_info .st_degree table tr{
+    border: 1px solid white;
+}
+
+.student_info .st_degree table tr td ,thead th{
+    border: 1px solid white;
+}
+
+.line{
+    opacity: 1;
+    border: 2px solid white;
+    margin-bottom: 50px;
+}
+
+.search .btn{
+    padding: 10px 30px;
+    border: 3px solid #26355D;
+    border-radius: 10px;
+    color: #26355D;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 10px;
+    box-shadow: 0 0 5px black;
+}
