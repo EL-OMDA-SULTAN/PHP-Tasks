@@ -69,6 +69,70 @@
             </div>
         </div>
     </section>
+
+
+    <section class="student_info_two">
+        <div class="container">
+            <h1>Top Student In Each Level</h1>
+            <div class="row">
+                <div class="col-12 st_btn text-center">
+                    <button class="btn btn1" name="btn1" onclick="
+                    let div=document.querySelector('.st_two');
+                    div.innerHTML=
+                        ` 
+                            <table style=''>
+                                <thead>
+                                    <tr style='text-align: center; padding: 10px ;'>
+                                        <th scope='col'>N</th>
+                                        <th scope='col'>Name</th>
+                                        <th scope='col'>level</th>
+                                        <th scope='col'>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                        $x=1;
+                                        $file = fopen ('files/students.txt', 'r');
+                                        for ($i=1; $i<=4; $i++) {
+                                            $max=0;
+                                            fseek($file,0);
+                                            while (!feof($file)) {
+                                                $line=fgets($file);
+                                                $data=explode('-',$line);
+                                                if ($data[1]==$i) {
+                                                    if ($data[2]+$data[3]+$data[4]+ $data[5]>$max) {
+                                                        $max=$data[2]+$data[3]+$data[4]+ $data[5];
+                                                        $max_name=$data[0];
+                                                    }
+                                                }
+                                            }
+                                            echo '<tr>';
+                                            echo '<th>'.$x.'</th>';
+                                            echo '<td>'.$max_name.'</td>';
+                                            echo '<td>'.$i.'</td>';
+                                            echo '<td>'.$max.'</td>';
+                                            echo '</tr>';
+                                            $x++;
+                                        }
+                                        fclose ($file); ?>
+                                </tbody>
+                            </table>
+                        `;
+                    ">Show </a></button>
+                    <button class="btn btn2" name="btn2" 
+                        onclick="
+                            let div=document.querySelector('.st_two');
+                            div.innerHTML='';
+                        ">
+                    Hide</a></button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-9 col-sm-12 st_two">
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- <hr class="line"> -->
 
     <!-- <section class="search">
