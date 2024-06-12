@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(71, 104, 105) !important;
+}
+.function h1{
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 0 0 5px white;
+    color: rgb(212, 3, 3);
+    padding: 50px 0;
+    background-color: rgba(133, 148, 1, 0.792);
+    margin: 20px 0;
+    border: 2px solid black;
+}
+
+.function .col{
+    background-color: #1679AB;
+    color: white;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+.function .col h5{
+    font-size: 25px;
+    margin: 20px 0;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgb(6, 6, 6);
+}
+
+.function .col span{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 0 0 3px white;
+    margin: 10px;
+    background-color: #07f1c3;
+    padding: 5px;
+    border: 2px solid black;
+    color: rgb(0, 0, 255);
+}
