@@ -1,0 +1,254 @@
+body{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/profile.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.navbar{
+    background-color: #0e6e9f !important;
+}
+
+.navbar ul li a ,
+.navbar ul li .nav-link{
+    color: white !important;
+    font-weight: 600;
+    font-size: 18px;
+    border-left: 1px solid white;
+    /* border-right: 1px solid white; */
+}
+
+@media (max-width:395px) {
+    .navbar ul li a ,
+    .navbar ul li .nav-link{
+        font-size: 10px !important;
+    }
+}
+
+.navbar ul li .active{
+    color: black !important;
+    text-decoration: underline;
+}
+
+.navbar ul li a:hover,
+.navbar ul li .nav-link:hover{
+    color: black !important;
+    text-decoration: underline;
+}
+
+.details .details_content{
+    background-color: #102c57c4;
+    height: 120vh;
+    box-shadow: 0 0 10px black;
+    color: white;
+}
+
+.details .details_content h2{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.details .details_content .details_img{
+    text-align: center;
+}
+
+.details .details_content .details_img img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.details .details_content .details_img p{
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    margin: 0 0 20px 0;
+}
+
+.details .details_content .details_info p{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 0;
+    color: #0e6e9f;
+    text-shadow: 0 0 5px black;
+    text-align: center;
+}
+
+.details .details_content .details_info p span{
+    color: white;
+    text-shadow: 0 0 5px black;
+    text-decoration: underline;
+}
+
+.details .departments h2{
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    text-shadow: 0 0 5px black;
+    font-size: 40px;
+}
+
+.details .departments .dep_img img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px black;
+    filter: grayscale(100%);
+}
+
+.details .departments h3{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 5px black;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.welcome{
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    width: 300px;
+    height: 150px;
+    /* position: relative; */
+}
+.row {
+    --bs-gutter-x:0rem;
+}
+.welcome img{
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px black;
+    border: 2px solid white;
+}
+
+.welcome .welcome_span{
+    position: absolute;
+    top:0px;
+    right: 10px;
+    background-color: #04355b;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid white;
+}
+
+.welcome .welcome_exit{
+    position: absolute;
+    top: -40px;
+    left: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 3px 10px;
+    background-color: rgba(255, 0, 0, 0.722);
+}
+
+.massage h1{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 5px black;
+    font-size: 40px;
+    margin-bottom: 15px;
+    margin:50px 0 ;
+}
+
+.massage h2{
+    text-align: center;
+    color:white;
+    text-shadow: 0 0 5px black;
+    font-size: 25px;
+    margin-bottom: 15px;
+    /* margin:50px 0 ; */
+}
+
+.massage_form form{
+    background-color: #04355b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    border: 1px solid white;
+}
+
+.massage_form form h1{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 5px black;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.massage_form form label{
+    color: white;
+    text-shadow: 0 0 5px black;
+    font-size: 20px;
+}
+
+.massage_form form textarea{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0;
+    outline: none;
+    font-weight: 600;
+}
+
+.massage_form form .btn{
+    display: block;
+    background-color: #0a2349;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 20px;
+    border: 2px solid white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-in-out;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.massage_form form .btn:hover{
+    background-color: white;
+    color: #061b39;
+    border-color: black ;
+}
+
+
+table td, 
+table th {
+    border: 1px solid #dddddd;
+    background-color: #061b39 !important;
+    text-align: left;
+    padding: 8px;
+    color: white !important;
+    text-shadow: 0 0 5px black;
+    text-align: center;
+    align-content: center;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: 2px solid black !important;
+}

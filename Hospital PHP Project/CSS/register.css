@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.login_form{
+    margin-top: 150px;
+
+}
+.login_form img{
+    filter: grayscale(100%);
+
+}
+
+.register_form {
+    margin: 50px 0;
+}
+
+.register_form .form,
+.login_form .form{
+    background-color: #0a2349;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 2px white ,0px 0px 10px #FFB1B1;
+}
+
+.register_form .form h1,
+.login_form .form h1{
+    color: #fff;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.register_form .form label,
+.login_form .form label{
+    color: #edebeb;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.register_form .form input,
+.login_form .form input,
+.register_form .form select,
+.register_form .form textarea,
+.register_form .form input::placeholder,
+.login_form .form input::placeholder{
+    border-radius: 5px;
+    background-color: #061b39cb;
+    color: white;
+}
+
+.register_form .form input:focus ,
+.login_form .form input:focus,
+.register_form .form select:focus, 
+.register_form .form textarea:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px #0a2349a5 ;
+}
+
+.register_form .form button,
+.login_form .form button{
+    display: block;
+    background-color: #0a2349;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 20px;
+    border: 2px solid white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.register_form .form button:hover,
+.login_form .form button:hover{
+    background-color: white;
+    color: #061b39;
+    border-color: #0a2349;
+    transform: scale(1.1);
+}
+
+.register_form .form input[type=file]::file-selector-button {
+    background-color: #0a2349b3;
+    color: black;
+    transition: 1s;
+}
+
+.register_form .form span,
+.login_form .form span{
+    color: rgb(255, 4, 4);
+    text-shadow: 0 0 3px black;
+}
+
+.animation_one{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/login.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    animation: animation_one 5s linear infinite alternate;
+}
+
+@keyframes animation_one{
+    0%{
+        top: 50px;
+        transform: rotate(40deg);
+    }
+    100%{
+        top: calc(100vh - 250px);
+        transform: rotate(-40deg);
+    }
+}
+
+
+.animation_two{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/login2.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    bottom: 50px;
+    right: 50px;
+    position: absolute;
+    animation: animation_two 5s linear infinite alternate;
+}
+
+@keyframes animation_two{
+    0%{
+        bottom: 50px;
+        transform: rotate(40deg);
+    }
+    100%{
+        bottom: calc(100vh - 250px);
+        transform: rotate(-40deg);
+    }
+}
+
+@media (max-width: 930px) {
+    .animation_one,
+    .animation_two{
+        width: 150px;
+        height: 150px;
+    }
+
+    .animation_one{
+        top: 0px;
+    }
+
+    .animation_two{
+        bottom: -135px;
+    }
+
+    @keyframes animation_two{
+        0%{
+            right: 50px;
+            transform: rotate(40deg);
+        }
+        100%{
+            right:calc(100% - 200px);
+            transform: rotate(-40deg);
+        }
+    }
+        @keyframes animation_one{
+        0%{
+            left: 50px;
+            transform: rotate(40deg);
+        }
+        100%{
+            left: calc(100% - 200px);
+            transform: rotate(-40deg);
+        }
+}
+}

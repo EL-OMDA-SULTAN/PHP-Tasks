@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+nav{
+    background-color: #0e6e9f;
+    padding: 0 !important;
+}
+
+nav img{
+    width: 70px;
+}
+
+nav ul li{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 19px 10px;
+}
+
+@media (max-width:991px){
+    nav ul li{
+        padding: 5px 0;
+    }
+}
+
+nav ul li:hover{
+    background-color: white;
+}
+
+nav ul li:hover a{
+    color: #0e6e9f !important;
+}
+
+nav ul a{
+    color: white !important;
+}
+
+nav .btn{
+    margin: 5px;
+    padding: 7px 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border: 2px solid white;
+    background-color: #102c57a1;
+    color: white;
+}
+
+nav .btn:hover{
+    background-color: white;
+    color: #0e6e9f;
+    border: 2px solid black;
+}
+
+nav i {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px 12px;
+    color: white;
+    font-size: 18px;
+    margin-left: 10px;
+    
+}
+
+nav .profile_img{
+    margin-left: 10px;
+    
+}
+
+nav .profile_img img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width:350px){
+    nav img{
+        width: 38px;
+        height: 38px;
+    }
+    nav .btn{
+        font-size: 14px;
+        padding: 5px 7px;
+    }
+    nav .profile_img img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.home h1{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    color: red;
+    margin: 100px 0 50px 0;
+    text-shadow: 0 0 5px black;
+}
+
+.home h1 #text{
+    color: #0c8ccd ;
+}
+.home h1 #dot{
+    display: inline-block;
+    width: 40px;
+    height: 7px;
+    color: white;
+    margin: 0 10px;
+    background-image:linear-gradient(to right,#0e6e9f 0% ,#0e6e9f 50%, red 50%, red 100%);
+}
+
+.home h4{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 0 5px black;
+    margin-bottom: 40px;
+}
+
+.home h4 .text-slider-items {
+    display: none;
+}
+
+.home .btn{
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border: 2px solid white;
+    background-color: #102c57a1;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.home .btn:hover{
+    background-color: white;
+    color: #0e6e9f;
+    border: 2px solid black;
+}
+
+.departments{
+    margin-top: 220px;
+}
+
+.departments h1,
+.contact h1{
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    margin: 100px 0 50px 0;
+    text-shadow: 0 0 5px black;
+}
+
+@media (max-width:991px){
+    .departments h1,
+    .contact h1{
+        font-size: 40px;
+    }
+}
+
+.departments h3{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 40px  ;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 0 5px black;
+    margin-bottom: 40px;
+}
+.departments .row{
+    margin: 20px 0;
+    background-color: #0e6f9fd8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+    padding:20px 0 ;
+}
+.departments .dep_img img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: grayscale(70%);
+}
+
+.departments .dep_content p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 2px;
+    padding: 10px 0;
+    color: white;
+    text-shadow: 0 0 5px black;
+    text-align: center;
+}
+
+.contact{
+    margin-bottom: 50px;
+}
+
+.contact form{
+    background-color: #0e6f9fd8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    border: 2px solid white;
+}
+
+.contact form input,
+.contact form textarea{
+    border: 2px solid black;
+    color: white;
+    font-size: 16px;
+    padding: 8px 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.contact form label{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 0 0 5px black;
+    margin: 10px 0 0 0;
+}
+
+.contact form .btn{
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border: 2px solid white;
+    background-color: #102c57a1;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact form .btn:hover{
+    background-color: white;
+    color: #0e6e9f;
+    border: 2px solid black;
+}
+
+.contact img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: grayscale(70%);
+}
+
+footer{
+    background-color: #0e6f9fd8;
+    padding: 20px 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+footer img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(70%);
+}
+
+footer h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px black;
+}
+
+footer .links li{
+    list-style: none;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+footer .links li a{
+    font-size: 22px;
+    text-decoration: none;
+    color: #04285f;
+    transition: all 0.5s ease-in-out;
+    font-weight: 700;
+}
+
+footer .links li a:hover{
+    color: white;
+}
+
+footer .social{
+    list-style: none;
+    margin: 20px 0;
+    text-align: center;
+}
+
+footer .social li{
+    display: inline-block;
+}
+
+footer .social li a{
+    font-size: 30px;
+    margin: 0 10px;
+    color: #08a5f4;
+}
+
+footer .social li a .fa-facebook:hover{
+    color: #045bcb;
+    background-color: white;
+    border-radius: 50%;
+}
+
+footer .social li a .fa-twitter:hover{
+    color: #08a5f4;
+    background-color: white;
+    border-radius: 50%;
+}
+
+footer .social li a .fa-instagram:hover{
+    color: #f408cd;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
